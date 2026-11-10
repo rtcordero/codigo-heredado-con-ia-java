@@ -71,4 +71,14 @@ class TarifaTest {
     void el_tipo_distingue_mayusculas() {
         assertEquals(0, tarifa.calcula(120, "coche", false));
     }
+
+    @Test
+    void la_moto_paga_1_euro_por_hora() {
+        assertEquals(200, tarifa.calcula(120, "MOTO", false));
+    }
+
+    @Test
+    void la_moto_no_paga_mas_de_8_euros_por_estancia() {
+        assertEquals(800, tarifa.calcula(10 * 60, "MOTO", false));
+    }
 }
