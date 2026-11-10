@@ -81,4 +81,9 @@ class TarifaTest {
     void la_moto_no_paga_mas_de_8_euros_por_estancia() {
         assertEquals(800, tarifa.calcula(10 * 60, "MOTO", false));
     }
+
+    @Test
+    void la_moto_de_residente_no_tiene_descuento() {
+        assertEquals(200, tarifa.calcula(120, "MOTO", true));
+    }
 }
