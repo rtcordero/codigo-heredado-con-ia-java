@@ -26,6 +26,11 @@ public class Tarifa {
                     if (p > 2800) {
                         p = 2800;
                     }
+                } else if (t.equals("MOTO")) {
+                    p = h * 100;
+                    if (p > 800) {
+                        p = 800;
+                    }
                 }
             }
         }
