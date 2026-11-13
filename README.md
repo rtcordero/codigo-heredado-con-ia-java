@@ -68,3 +68,7 @@ El historial reconstruye los pasos del artículo en su mismo orden, para poder r
 ## Licencia
 
 [MIT](LICENSE).
+
+## Continuación
+
+El mismo refactor, en doce pasos pequeños y cada uno en verde, está en `refactorizar-con-ia-java`, el código del artículo [Refactorizar con IA en pasos pequeños, sin romper nada](https://rubentejera.com/refactorizar-con-ia/).
